@@ -1,0 +1,17 @@
+/**
+ * Author: Dustyne Brown
+ * Class Name: Intro To Programming
+ * Instructor: Brian McLaughlan
+ * Date: 3/22/12
+ */
+public class Week_10_Files_And_Random_Numbers {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

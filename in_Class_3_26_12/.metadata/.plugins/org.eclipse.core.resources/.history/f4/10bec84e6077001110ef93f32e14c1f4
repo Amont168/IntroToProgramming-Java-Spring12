@@ -1,0 +1,17 @@
+
+public static getNumberRange(int lowerbound, int upperbound) {
+
+	String answer;
+	int num;
+	
+	do {
+		answer = JOptionPane.showInputDialog("Enter a number from " + lowerbound + "to" + upperbound);
+		num = Integer.parseInt(answer);
+		if (num<lowerbound || num>upperbound)
+			{
+			JOptionPane.showMessageDialog(null, "Number is outside of range");
+			}
+	
+	}while(num<lowerbound || num>upperbound);
+	return num;
+}

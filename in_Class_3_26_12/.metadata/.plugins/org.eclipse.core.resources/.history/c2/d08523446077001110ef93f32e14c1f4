@@ -1,0 +1,23 @@
+
+public class one {
+
+	/**
+	 * @param args
+	 */
+	
+	
+	public static void main(String[] args) {
+			int answer, val1, val2;
+			
+			val1=getNumberRange(1,100);
+			val2=getNumberRange(1,100);
+			
+			
+			answer=val1+val2;
+			
+			
+			System.out.println("Answer is " + answer);
+
+	}
+
+}

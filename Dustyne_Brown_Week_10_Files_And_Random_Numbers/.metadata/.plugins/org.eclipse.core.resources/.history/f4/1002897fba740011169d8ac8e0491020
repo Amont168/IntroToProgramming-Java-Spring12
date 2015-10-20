@@ -1,0 +1,69 @@
+/**
+ * Author: Dustyne Brown
+ * Class Name: Intro To Programming
+ * Instructor: Brian McLaughlan
+ * Date: 3/22/12
+ */
+
+/**
+ * Things to do.
+ * 1. Ask the user for a file name.
+ * 2. Open the requested file.
+ * 3. Read the data from the file and display it.(Use the WHILE loop)
+ * 4. Close the file.
+ * 5. Open the same file, but appended mode.
+ * 6. Generate a random number from 3 to 8.
+ * 7. Ask the user to enter than many new words.
+ * 8. save them to the file as the user enters them.
+ * 9. Close the file again.
+ */
+
+//Gather required imports.
+import java.io.*; //Java file writing utilities
+import java.util.Scanner; //import scanner
+import javax.swing.JOptionPane; //J Option Panes
+import java.util.Random; //Import the class to create random numbers
+
+public class Week_10_Files_And_Random_Numbers {
+	public static void main(String[] args) throws IOException {
+		/**Declare all variables*/
+		String filename;
+		int random;
+		
+		/**Ask for file name*/
+		filename=JOptionPane.showInputDialog("Enter the name of the file you wish to open.");
+		
+		/**Create a file variable named file based off the entered filename*/
+		File file= new File(filename);
+		
+		/**Create a scanner named inputFile to scan the text in the file entered by the user*/
+		Scanner inputFile = new Scanner(file);
+		
+		/**Create a while loop to read each line in the requested file.*/
+		while (inputFile.hasNext())
+			{
+			/**create a string that is set to each line as the while loop repeats*/
+			String fileLine = inputFile.nextLine();
+			
+			/**Print the string*/
+			System.out.println(fileLine);
+			}
+		/**Close the file!*/
+		inputFile.close();
+		
+		/**Open the filename in an appending mode, and create a filewriter for it*/
+		FileWriter fwriter = new FileWriter(filename);
+		
+		/**Create a Print Writer to write to the filename requested*/
+		PrintWriter outputFile = new PrintWriter(fwriter);
+		
+		/**Create a random numbers class*/
+		Random randomNumbers = new Random();
+		
+		/**Generate a random number between 3 and 8*/
+		random = randomNumbers.nextInt(3, 8)
+		
+
+	}
+
+}

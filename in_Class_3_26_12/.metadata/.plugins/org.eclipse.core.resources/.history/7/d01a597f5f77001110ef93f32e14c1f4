@@ -1,0 +1,10 @@
+
+public static int getNumberRange(int lowerbound, int upperbound) {
+
+	String answer;
+	int num;
+	
+	do {
+		JOptionPane.showInputDialog("Enter a number from " + lowerbound + "to" + upperbound);
+	}
+}
